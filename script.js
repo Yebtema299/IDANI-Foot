@@ -7,14 +7,32 @@ function analyserMatch() {
         return;
     }
 
-    alert(
-        "🤖 IDANI Foot analyse : " + match +
-        "\n\nAnalyse en cours...\n\n" +
-        "📊 Forme des équipes\n" +
-        "⚽ Statistiques\n" +
-        "🧠 Analyse tactique\n" +
-        "👥 Joueurs importants\n" +
-        "📰 Informations récentes"
-    );
+    document.getElementById("resultat").innerHTML = `
+    
+    <h2>🤖 Analyse de ${match}</h2>
+
+    <p>⏳ Analyse IA terminée</p>
+
+    <div class="feature">
+    📊 Forme des équipes : en cours d'étude
+    </div>
+
+    <div class="feature">
+    ⚽ Statistiques : données en préparation
+    </div>
+
+    <div class="feature">
+    👥 Joueurs importants et absences
+    </div>
+
+    <div class="feature">
+    🧠 Scénarios possibles du match
+    </div>
+
+    <div class="feature">
+    📌 Simulation : analyse générée par IA
+    </div>
+
+    `;
 
 }
